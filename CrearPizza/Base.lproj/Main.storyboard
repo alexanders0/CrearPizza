@@ -18,34 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="112.5" y="312" width="150.5" height="43"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoV-y6-fK1">
+                                <rect key="frame" x="27.5" y="253" width="320" height="161"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="Y8o-ln-cQF"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Tamaño de Pizza:" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="38.5" y="153" width="165.5" height="26.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="90.5" y="363" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hG-rT-XzJ">
+                                <rect key="frame" x="250" y="155" width="68.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-66.5" id="4B9-fT-p3G"/>
+                            <constraint firstItem="7hG-rT-XzJ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="135" id="4Rb-YI-epf"/>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" constant="66.5" id="6BV-lF-sBN"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-66.5" id="DIa-W0-xKb"/>
+                            <constraint firstItem="7hG-rT-XzJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="96.75" id="GBe-1b-Lgb"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-66.5" id="QLw-o1-YVR"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="UoV-y6-fK1" secondAttribute="centerX" constant="-66.5" id="c4a-iR-2s6"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="UoV-y6-fK1" secondAttribute="bottom" constant="204" id="c6e-5i-ToC"/>
+                            <constraint firstItem="UoV-y6-fK1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="cky-yw-yW3"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" constant="167.5" id="exm-UA-ej4"/>
+                            <constraint firstItem="UoV-y6-fK1" firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" constant="167.5" id="fKZ-bt-Egk"/>
+                            <constraint firstItem="7hG-rT-XzJ" firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="ikp-dd-c2s"/>
+                            <constraint firstItem="7hG-rT-XzJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="96.75" id="k0W-B3-Hyg"/>
+                            <constraint firstItem="7hG-rT-XzJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="96.75" id="owP-P3-cva"/>
+                            <constraint firstItem="7hG-rT-XzJ" firstAttribute="centerX" secondItem="UoV-y6-fK1" secondAttribute="centerX" constant="96.75" id="qcT-rc-eUQ"/>
+                            <constraint firstItem="UoV-y6-fK1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="xdt-aD-wZ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tamaño" image="Tamano" selectedImage="Tamano" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tamanoLabel" destination="7hG-rT-XzJ" id="Rj7-s0-fwt"/>
+                        <outlet property="tamanosPizza" destination="UoV-y6-fK1" id="EwG-tO-dsU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
         <!--Masa-->
         <scene sceneID="wg7-f3-ORb">
